@@ -32,6 +32,18 @@ main {
 }
 
 h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+h2 {
     font-family: 'Big Shoulders Display', cursive;
     text-align: start;
     text-transform: uppercase;
@@ -45,13 +57,18 @@ p {
     text-align: start;
 }
 
-button {
+.info-btn a {
+    display: inline-block;
     width: 146px;
     height: 48px;
     font-family: 'Lexend Deca', sans-serif;
     border-radius: 25px;
     border: none;
     background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em
+    
 }
 
 
@@ -143,6 +160,7 @@ button {
     main {
         flex-direction: row;;
         align-items: center;
+        margin-block: 11rem;
     }
 
     .sedans {
