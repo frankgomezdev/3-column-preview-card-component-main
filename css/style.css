@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--transparent-white);
+    font-size: 0.9rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    font-family: 'Lexand Deca', sans-serif;
+    line-height: 15px;
+}
+
+button {
+    width: 146px;
+    height: 48px;
+    font-family: 'Lexand Deca', sans-serif;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}
+
+.title {
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    max-width: 307px;
+    min-height: 600px;
+    padding-top: 48px;
+    padding-right: 48px;
+    padding-left: 48px;
+    color: var(--transparent-white);
+}
+
+.card-description {
+    max-width: 212px;
+    min-height: 125px;
+}
+
+.info-btn {
+    margin-top: 60px;
+}
+
+
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sedans.card .sedan.btn {
+    color: var(--bright-orange)
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs.card .suv.btn {
+    color: var(--dark-cyan);
+}
+
+.luxurys {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.luxurys.card .luxury.btn {
+    color: var(--very-dark-cyan);
+}
+
+.sedan.btn:hover {
+    background-color: var(--bright-orange);
+    color: white;
+    border: 1px solid white;
+}
+
+.suv.btn:hover {
+    background-color: var(--dark-cyan);
+    border: 1px solid white;
+}
+
+.luxury.btn:hover {
+    background-color: var(--very-dark-cyan);
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
