@@ -33,17 +33,22 @@ main {
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 p {
-    font-family: 'Lexand Deca', sans-serif;
-    line-height: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+    text-align: start;
 }
 
 button {
     width: 146px;
     height: 48px;
-    font-family: 'Lexand Deca', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     border-radius: 25px;
     border: none;
     background-color: white;
@@ -51,18 +56,15 @@ button {
 
 
 .title {
-    text-align: start;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 700;
+    
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-around;
     max-width: 18rem;
-    min-height: 600px;
+    min-height: 31.25rem;
     padding: 2rem;
     color: var(--transparent-white);
 }
@@ -70,11 +72,10 @@ button {
 .card-description {
     max-width: 212px;
     min-height: 125px;
+    line-height: 25px;
 }
 
-/* .info-btn {
-    margin-top: 60px;
-} */
+
 
 
 
@@ -110,19 +111,19 @@ button {
 .sedan.btn:hover {
     background-color: var(--bright-orange);
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .suv.btn:hover {
     background-color: var(--dark-cyan);
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .luxury.btn:hover {
     background-color: var(--very-dark-cyan);
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 
@@ -134,7 +135,7 @@ button {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%);\
+    color: hsl(228, 45%, 44%);
 }
 
 
