@@ -25,6 +25,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-block: 5rem;
 }
 
@@ -125,10 +126,8 @@ button {
 
 
 .attribution { 
-    align-self: center;
     font-size: 11px; 
     text-align: center;
-    margin-top: 20px;
 }
 
 .attribution a { 
