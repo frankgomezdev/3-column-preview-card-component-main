@@ -16,14 +16,16 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     background-color: var(--transparent-white);
     font-size: 0.9rem;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    flex-direction: column;
+    margin-block: 5rem;
 }
 
 h1 {
@@ -44,6 +46,7 @@ button {
     background-color: white;
 }
 
+
 .title {
     text-align: start;
     text-transform: uppercase;
@@ -54,12 +57,10 @@ button {
 .card {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    max-width: 307px;
+    justify-content: space-between;
+    max-width: 18rem;
     min-height: 600px;
-    padding-top: 48px;
-    padding-right: 48px;
-    padding-left: 48px;
+    padding: 2rem;
     color: var(--transparent-white);
 }
 
@@ -68,19 +69,19 @@ button {
     min-height: 125px;
 }
 
-.info-btn {
+/* .info-btn {
     margin-top: 60px;
-}
+} */
 
 
 
 .sedans {
     background-color: var(--bright-orange);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 1.5em 1.5em 0 0;
 }
 
-.sedans.card .sedan.btn {
+.sedan.btn {
+    background-color: white;
     color: var(--bright-orange)
 }
 
@@ -88,17 +89,18 @@ button {
     background-color: var(--dark-cyan);
 }
 
-.suvs.card .suv.btn {
-    color: var(--dark-cyan);
+.suv.btn {
+    background-color: white;
+    color: var(--dark-cyan)
 }
 
 .luxurys {
     background-color: var(--very-dark-cyan);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 0 0 1.5em 1.5em;
 }
 
-.luxurys.card .luxury.btn {
+.luxury.btn {
+    background-color: white;
     color: var(--very-dark-cyan);
 }
 
@@ -110,30 +112,43 @@ button {
 
 .suv.btn:hover {
     background-color: var(--dark-cyan);
+    color: white;
     border: 1px solid white;
 }
 
 .luxury.btn:hover {
     background-color: var(--very-dark-cyan);
+    color: white;
     border: 1px solid white;
 }
 
 
 
-
-
-
-
-
-
-
-
-
 .attribution { 
+    align-self: center;
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    margin-top: 20px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 880px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sedans {
+        border-radius: 1.5em 0 0 1.5em;
+        
+    }
+
+    .luxurys {
+        border-radius: 0 1.5em 1.5em 0;
+        
+    }
 }
